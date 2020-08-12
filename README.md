@@ -1,5 +1,5 @@
 # ApexLegendsInfo
-A simple python3 program which gives information about abilities of different legends of the game Apex Legendss
+A simple python3 program which gives information about different legends of the game Apex Legendss
 
 //  apex.py uses input function to ask for input from the user //
                              
