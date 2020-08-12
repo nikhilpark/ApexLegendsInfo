@@ -21,7 +21,6 @@ l11=legends("Lifeline","Combat revive","D.O.C. heal drone","Care package",True,F
 l12=legends("Octane","Swift mend","Stim","Launch pad",False,False)
 l13=legends("Revenant","Stalker","Silence","Death totem",False,False)
 
-
 list=("Legend Name:- ","Passive:- ","Tactical:- ","Ultimate:- ","Low profile legend","Fortified legend")
 def main():
     print("Choose a legend")
