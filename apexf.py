@@ -141,6 +141,8 @@ elif choice == "revenant" or choice == "rev":
     elif l13.is_ftf:
         print(list[5])
     print("\n")
+    
+    
 else:
     print("that's not a legend !!")
     print("Usage:- python apexf.py <name of legend>\n")
