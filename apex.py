@@ -20,11 +20,12 @@ l10=legends("Gibraltar","Gun shield","Dome of protection","Defensive bombardment
 l11=legends("Lifeline","Combat revive","D.O.C. heal drone","Care package",True,False)
 l12=legends("Octane","Swift mend","Stim","Launch pad",False,False)
 l13=legends("Revenant","Stalker","Silence","Death totem",False,False)
+l14=legends("Rampart","Modded Loader","Amped cover","Emplaced minigun 'Sheila'",False,False)
 
 list=("Legend Name:- ","Passive:- ","Tactical:- ","Ultimate:- ","Low profile legend","Fortified legend")
 def main():
     print("Choose a legend")
-    print("(1). Banglore  (2). Wraith (3). Loba (4). Bloodhound \n(5). Caustic (6). Wattson (7). Crypto (8). Pathfinder \n(9). Mirage (10). Gibraltor (11). Lifeline (12). Octane (13). Revenant \n(x). to Exit")
+    print("(1). Banglore  (2). Wraith (3). Loba (4). Bloodhound \n(5). Caustic (6). Wattson (7). Crypto (8). Pathfinder \n(9). Mirage (10). Gibraltor (11). Lifeline (12). Octane \n(13). Revenant (14). Rampart (x). to Exit")
     choice = input()
     if choice == "1":
         print(list[0]+l1.name+"\n"+list[1]+l1.pas+"\n"+list[2]+l1.tact+"\n"+list[3]+l1.ult)
@@ -142,6 +143,17 @@ def main():
             print(list[5])
         print("\n")
         main()
+        
+        
+    elif choice == "14":
+        print(list[0] + l14.name + "\n" + list[1] + l14.pas + "\n" + list[2] + l14.tact + "\n" + list[3] + l14.ult)
+        if l14.is_lp:
+            print(list[4])
+        elif l14.is_ftf:
+            print(list[5])
+        print("\n")
+        main()
+
 
     elif choice=="x":
         print("BYE!")
