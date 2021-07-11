@@ -22,6 +22,9 @@ l11=legends("Lifeline","Combat revive","D.O.C. heal drone","Care package",True,F
 l12=legends("Octane","Swift mend","Stim","Launch pad",False,False)
 l13=legends("Revenant","Stalker","Silence","Death totem",False,False)
 l14=legends("Rampart","Modded Loader","Amped cover","Emplaced minigun 'Sheila'",False,False)
+l15=legends("Horizon","Spacewalk","Gravity Lift","Black Hole",False,False)
+l16=legends("Fuse","Grenadier","Knuckle Cluster","The Motherlode",False,False)
+l17=legends("Valkyrie","VTOL Jetpack","Missile Swarm","Skyward Dive",False,False)
 
 list=("Legend Name:- ","Passive:- ","Tactical:- ","Ultimate:- ","Low profile legend","Fortified legend")
 
@@ -29,7 +32,7 @@ try:
 
 	choice = sys.argv[1]
 	print("\n")
-	if choice == "banglore" or choice == "bang":
+	if choice == "bangalore" or choice == "bang":
 	    print(list[0] + l1.name + "\n" + list[1] + l1.pas + "\n" + list[2] + l1.tact + "\n" + list[3] + l1.ult)
 	    if l1.is_lp:
 	        print(list[4])
@@ -152,7 +155,30 @@ try:
 	    elif l14.is_ftf:
 	        print(list[5])
 	    print("\n")
-	    
+
+	elif choice == "horizon":
+	    print(list[0] + l15.name + "\n" + list[1] + l15.pas + "\n" + list[2] + l15.tact + "\n" + list[3] + l15.ult)
+	    if l15.is_lp:
+	        print(list[4])
+	    elif l15.is_ftf:
+	        print(list[5])
+	    print("\n")
+
+	elif choice == "fuse":
+	    print(list[0] + l16.name + "\n" + list[1] + l16.pas + "\n" + list[2] + l16.tact + "\n" + list[3] + l16.ult)
+	    if l16.is_lp:
+	        print(list[4])
+	    elif l16.is_ftf:
+	        print(list[5])
+	    print("\n")
+
+	elif choice == "valkyrie" or choice == "valk":
+	    print(list[0] + l17.name + "\n" + list[1] + l17.pas + "\n" + list[2] + l17.tact + "\n" + list[3] + l17.ult)
+	    if l17.is_lp:
+	        print(list[4])
+	    elif l17.is_ftf:
+	        print(list[5])
+	    print("\n")
 	    
 	    
 	else:
